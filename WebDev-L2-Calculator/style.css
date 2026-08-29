@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, sans-serif;
+
+    background: linear-gradient(135deg, #1d2671, #c33764);
+}
+
+.calculator {
+    width: 350px;
+
+    padding: 20px;
+
+    border-radius: 20px;
+
+    background: #ffffff;
+
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+}
+
+.calculator-header {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.calculator-header h1 {
+    font-size: 26px;
+    color: #222;
+}
+
+.display {
+    min-height: 100px;
+
+    padding: 15px;
+
+    margin-bottom: 15px;
+
+    border-radius: 12px;
+
+    background: #222;
+
+    color: white;
+
+    text-align: right;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    overflow: hidden;
+}
+
+#previous-display {
+    min-height: 25px;
+
+    font-size: 16px;
+
+    color: #aaa;
+}
+
+#current-display {
+    font-size: 38px;
+
+    font-weight: bold;
+
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.buttons {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 10px;
+}
+
+button {
+    height: 60px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    background: #f1f1f1;
+
+    transition: 0.2s;
+}
+
+button:hover {
+    transform: scale(1.04);
+
+    background: #ddd;
+}
+
+button:active {
+    transform: scale(0.96);
+}
+
+.operator {
+    background: #ff9500;
+
+    color: white;
+}
+
+.operator:hover {
+    background: #e68600;
+}
+
+.function {
+    background: #d9d9d9;
+
+    color: #222;
+}
+
+.equals {
+    grid-row: span 2;
+
+    background: #28a745;
+
+    color: white;
+
+    height: 130px;
+}
+
+.equals:hover {
+    background: #218838;
+}
+
+.zero {
+    grid-column: span 2;
+}
+
+@media (max-width: 400px) {
+
+    .calculator {
+        width: 90%;
+    }
+
+    button {
+        height: 55px;
+
+        font-size: 18px;
+    }
+
+    .equals {
+        height: 120px;
+    }
+}

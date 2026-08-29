@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | Secure Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="auth-container">
+        <div class="auth-card">
+
+            <div class="logo">✨</div>
+
+            <h1>Create Account</h1>
+
+            <p class="subtitle">Register to get started</p>
+
+            <form id="register-form">
+
+                <div class="input-group">
+                    <label for="register-username">Username</label>
+                    <input type="text" id="register-username"
+                        placeholder="Choose a username" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="register-email">Email</label>
+                    <input type="email" id="register-email"
+                        placeholder="Enter your email" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="register-password">Password</label>
+                    <input type="password" id="register-password"
+                        placeholder="Minimum 8 characters" required>
+                </div>
+
+                <div class="password-rules">
+                    <p>Password must contain:</p>
+                    <ul>
+                        <li>At least 8 characters</li>
+                        <li>At least 1 number</li>
+                    </ul>
+                </div>
+
+                <p id="register-error" class="error-message"></p>
+                <p id="register-success" class="success-message"></p>
+
+                <button type="submit" class="primary-btn">
+                    Register
+                </button>
+
+            </form>
+
+            <p class="switch-page">
+                Already have an account?
+                <a href="index.html">Login</a>
+            </p>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

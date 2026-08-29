@@ -1,0 +1,291 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: #222;
+}
+
+
+/* ================= AUTH PAGES ================= */
+
+.auth-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+.auth-card {
+    width: 100%;
+    max-width: 430px;
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    background: #eef0ff;
+    font-size: 28px;
+}
+
+.auth-card h1 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+.input-group {
+    margin-bottom: 18px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 14px;
+    border: 2px solid #e1e1e1;
+    border-radius: 10px;
+    font-size: 15px;
+    outline: none;
+}
+
+.input-group input:focus {
+    border-color: #667eea;
+}
+
+.password-rules {
+    padding: 12px;
+    margin-bottom: 15px;
+    background: #f6f7ff;
+    border-radius: 8px;
+    font-size: 13px;
+    color: #666;
+}
+
+.password-rules p {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.password-rules ul {
+    padding-left: 20px;
+}
+
+.primary-btn {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background: #667eea;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.primary-btn:hover {
+    background: #5568d9;
+    transform: translateY(-2px);
+}
+
+.error-message {
+    min-height: 20px;
+    margin-bottom: 10px;
+    color: #d32f2f;
+    font-size: 13px;
+    text-align: center;
+}
+
+.success-message {
+    min-height: 20px;
+    margin-bottom: 10px;
+    color: #238b45;
+    font-size: 13px;
+    text-align: center;
+}
+
+.switch-page {
+    text-align: center;
+    margin-top: 22px;
+    color: #777;
+    font-size: 14px;
+}
+
+.switch-page a {
+    color: #667eea;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+/* ================= DASHBOARD ================= */
+
+.dashboard {
+    min-height: 100vh;
+    background: #f5f6fa;
+}
+
+.navbar {
+    height: 70px;
+    padding: 0 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.brand {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.logout-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background: #ff5252;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.logout-btn:hover {
+    background: #e04444;
+}
+
+.dashboard-content {
+    max-width: 1000px;
+    margin: auto;
+    padding: 60px 25px;
+}
+
+.welcome-card {
+    background: white;
+    padding: 45px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    margin-bottom: 30px;
+}
+
+.welcome-icon {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.welcome-card h1 {
+    font-family: Georgia, serif;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.welcome-card h1 span {
+    color: #667eea;
+}
+
+.welcome-card > p {
+    color: #777;
+    margin-bottom: 25px;
+}
+
+.account-info {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    background: #f7f8ff;
+    border-radius: 12px;
+    text-align: left;
+}
+
+.account-info p {
+    margin: 8px 0;
+}
+
+.status {
+    color: #238b45;
+    font-weight: bold;
+}
+
+
+/* Feature Cards */
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.feature-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+.feature-card span {
+    font-size: 35px;
+}
+
+.feature-card h3 {
+    margin: 12px 0 8px;
+}
+
+.feature-card p {
+    color: #777;
+    font-size: 14px;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 700px) {
+
+    .auth-card {
+        padding: 30px 22px;
+    }
+
+    .navbar {
+        padding: 0 20px;
+    }
+
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .welcome-card {
+        padding: 30px 20px;
+    }
+
+    .welcome-card h1 {
+        font-size: 28px;
+    }
+}
